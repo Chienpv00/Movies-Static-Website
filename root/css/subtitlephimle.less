@@ -1,0 +1,90 @@
+// column grid
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+// clearfix
+.row::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+// option column
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    // border: 1px solid red;
+    position: relative;
+}
+
+.sub-nav{
+    padding: 0 60px;
+
+    span{
+        display: inline-block;
+        font-size: 18px;
+        color: white;
+        font-weight: bold;
+        margin: 15px 0;
+    }
+
+    .block-filter{
+
+
+        .select{
+            display: inline-block;
+            margin-right: 10px;
+
+            select{
+                background-color: black;
+                color: white;
+                border: 0.5px solid rgb(211, 211, 211);
+                border-radius: 3px;
+                padding: 15px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .fa-filter{
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .select{
+        display: block !important;
+
+        select{
+            margin-bottom: 7px;
+            width: 200px;
+        }
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .select{
+        display: block !important;
+
+        select{
+            margin-bottom: 7px;
+            width: 100%;
+        }
+    }
+}

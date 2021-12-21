@@ -1,0 +1,58 @@
+//grid
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+// clearfix
+.row::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+// option column
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    position: relative;
+    // border: 1px solid red;
+}
+
+.season{
+    margin: 0 45px;
+
+    .season-title{
+        margin:30px 0 0 15px;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+    }
+    .season-item{
+        div{
+            text-align: center;
+            button{
+                background-color: #3399CC;
+                font-size: 16px;
+                padding: 9px 18px;
+                border: none;
+                border-radius: 7px;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}

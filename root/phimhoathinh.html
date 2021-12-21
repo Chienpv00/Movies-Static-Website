@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Play - Phim lẻ</title>
+    <!-- template  open-->
+    <link rel="stylesheet/less" type="text/css" href="css/temp.less">
+    <link rel="stylesheet" href="library/fontawesome/css/all.css">
+    <link rel="icon" href="images/logo-design.png">
+    <script src="library/jquery/jquery-3.6.0.js"></script>
+
+    <!-- template  close-->
+
+    <!-- edit open -->
+    <link rel="stylesheet/less" type="text/css" href="css/phimle.less">
+    <link rel="stylesheet/less" type="text/css" href="css/slider.less">
+    <link rel="stylesheet/less" type="text/css" href="css/subtitlephimle.less">
+    <!-- edit close -->
+</head>
+
+<body>
+    <!-- Header start -->
+    <div class="header">
+        <div class="menu-header">&equiv;</div>
+        <div class="logo">
+            <a href="home.html"><img src="images/logo-design.png" alt="logo Film Play"></a>
+        </div>
+
+        <!-- navigation -->
+        <div class="nav"> 
+            <a href="home.html">Home</a>
+            <a href="phimle.html">Phim lẻ</a>
+            <a href="phimbo.html">Phim bộ</a>
+            <a class="active-nav" href="phimhoathinh.html">Phim hoạt hình</a>
+            <a href="phimchieurap.html">Phim chiếu rạp</a>
+        </div>
+        <!-- input search, icon search -->
+        <div class="search flex-end">
+            <div class="search-input">
+                <div class="tt">
+                        <input type="text" id="search" name="search" placeholder="Tìm kiếm tại đây">
+                        <button class="search-submit"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+                
+            <div class="h-login"><a href="personal.html"><button class="btn-login"><i class="fas fa-user"></i></button></a></div>
+        </div>
+        <!-- button login cua header -->
+    </div>
+
+    <div class="header-rwd">
+        <div class="close-header-rwd"><span>X</span></div>
+        <div class="search-rwd">
+            <form name="search-2">
+                <input type="text" id="search-2" name="search-2" placeholder="Tìm kiếm tại đây">
+                <button class="search-submit-2"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div ><a href="index.html" class="active-nav">Home</a></div>
+        <div><a href="phimle.html">Phim lẻ</a></div>
+        <div><a href="phimbo.html">Phim bộ</a></div>
+        <div><a href="phimhoathinh.html">Phim hoạt hình</a></div>
+        <div><a href="phimchieurap.html">Phim chiếu rạp</a></div>
+        <div class="login-rwd"><a href="personal.html">Cá nhân</a></div>
+    </div>
+    </div>
+    <!-- Header end -->
+    <!-- section start - can edit-->
+    <div class="section">
+
+        <!-- slider -->
+        <div class="slider">
+
+            <!-- previous button -->
+            <i class="fas fa-angle-left slider-prev"></i>
+
+            <!-- dot button -->
+            <ul class="slider-dots">
+                <li class="slider-dot-item active" data-index="0"></li>
+                <li class="slider-dot-item" data-index="1"></li>
+                <li class="slider-dot-item" data-index="2"></li>
+                <li class="slider-dot-item" data-index="3"></li>
+            </ul>
+
+            <div class="slider-wrap">
+                <div class="slider-main">
+                    <div class="slider-item 1">
+                        <div class="slider-title"><img src="images/index/spider-man-far-from-home_web_title.png" class="img-title" alt=""></div>
+                        <img src="images/index/Người nhện xa nhà (Far from home).png" class="slider-img" alt="">
+                        <div class="slider-btn">
+                            <a class="slide-play" href=""><i class="fas fa-play"></i>&nbsp;&nbsp;&nbsp;&nbsp; Xem ngay &nbsp;&nbsp;&nbsp;<i class="fas fa-forward"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="slider-item 2">
+                        <div class="slider-title"><img src="images/index/ADELE One night light text.png" class="img-title" alt=""></div>
+                        <img src="images/index/ADELE One night light.png" class="slider-img" alt="">
+                        <div class="slider-btn">
+                            <a class="slide-play" href=""><i class="fas fa-play"></i>&nbsp;&nbsp;&nbsp;&nbsp; Xem ngay &nbsp;&nbsp;&nbsp;<i class="fas fa-forward"></i></a>
+                        </div>
+                    </div>
+                    <div class="slider-item 3">
+                        <div class="slider-title"><img src="images/index/Lật mặt 48h text.png" class="img-title" alt=""></div>
+                        <img src="images/index/Lật mặt 48h.png" class="slider-img" alt="">
+                        <div class="slider-btn">
+                            <a class="slide-play" href=""><i class="fas fa-play"></i>&nbsp;&nbsp;&nbsp;&nbsp; Xem ngay &nbsp;&nbsp;&nbsp;<i class="fas fa-forward"></i></a>
+                        </div>
+                    </div>
+                    <div class="slider-item 4">
+                        <div class="slider-title"><img src="images/index/bo-gia-title.jpg" alt="" class="img-title"></div>
+                        <img src="images/index/bogia.png" class="slider-img" alt="">
+                        <div class="slider-btn">
+                            <a class="slide-play" href=""><i class="fas fa-play"></i>&nbsp;&nbsp;&nbsp;&nbsp; Xem ngay &nbsp;&nbsp;&nbsp;<i class="fas fa-forward"></i></a>
+                        </div>
+                        </div>
+                </div>
+            </div>
+        
+            <i class="fas fa-angle-right slider-next"></i>
+        </div>
+
+        <!-- sub navigation -->
+        <div class="sub-nav">
+            <span>Phân loại</span>
+            <div class="block-filter">
+                <div class="select filter-1">
+                    <select name="" class="selection">
+                        <option value="all">Tất cả Quốc gia</option>
+                        <option value="vietnam">Việt Nam</option>
+                        <option value="us">Mỹ</option>
+                        <option value="uk">Anh</option>
+                        <option value="russia">Nga</option>
+                        <option value="korea">Hàn Quốc</option>
+                        <option value="china">Trung Quốc</option>
+                        <option value="order">Khác</option>
+                    </select>
+                </div>
+                <div class="select filter-2">
+                    <select name="" class="selection">
+                        <option value="all" class="a">Tất cả Thể loại</option>
+                        <option value="phimmoi">Mới ra mắt</option>
+                        <option value="hanhdong">Hành động</option>
+                        <option value="tamly">Tâm lý tình cảm</option>
+                        <option value="hai">Hài hước</option>
+                        <option value="hoathinh">Hoạt hình</option>
+                        <option value="kinhdi">Kinh dị</option>
+                        <option value="vientuong">Khoa học viễn tưởng</option>
+                    </select>
+                </div>
+                <div class="select filter-3">
+                    <select name="" class="selection">
+                        <option value="all">Tất cả năm</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">Từ 2015 về trước</option>
+                    </select>
+                </div>
+                <i class="fas fa-filter"></i>
+            </div>
+
+            
+        </div>
+        
+
+        <!-- items -->
+        <div class="row">
+            <div class="s-item col-2" data-country="vietnam" data-category="hanhdong" data-year="2021">
+                <a href="" class="s-image"> <img src="images/index/kingsman.jpg" alt=""></a>
+                <a href="" class="s-title">Khong loi thoat hiem Khong loi thoat hiem</a>
+                <img class="s-label" src="images/index/13plus.png" alt="">
+            </div>
+            <div class="s-item col-2" data-country="vietnam" data-category="hanhdong" data-year="2021">
+                <a href="" class="s-image"> <img src="images/index/kingsman.jpg" alt=""></a>
+                <a href="" class="s-title">Khong loi thoat hiem Khong loi thoat hiem</a>
+                <img class="s-label" src="images/index/13plus.png" alt="">
+            </div>
+            <div class="s-item col-2" data-country="" data-category="hanhdong" data-year="">
+                <a href="" class="s-image"> <img src="images/index/kingsman.jpg" alt=""></a>
+                <a href="" class="s-title">Khong loi thoat hiem Khong loi thoat hiem</a>
+                <img class="s-label" src="images/index/13plus.png" alt="">
+            </div>
+            <div class="s-item col-2" data-country="" data-category="" data-year="">
+                <a href="" class="s-image"> <img src="images/index/kingsman.jpg" alt=""></a>
+                <a href="" class="s-title">Khong loi thoat hiem Khong loi thoat hiem</a>
+                <img class="s-label" src="images/index/13plus.png" alt="">
+            </div>
+            <div class="s-item col-2" data-country="" data-category="" data-year="">
+                <a href="" class="s-image"> <img src="images/index/kingsman.jpg" alt=""></a>
+                <a href="" class="s-title">Khong loi thoat hiem Khong loi thoat hiem</a>
+                <img class="s-label" src="images/index/13plus.png" alt="">
+            </div>
+            <div class="s-item col-2" data-country="" data-category="" data-year="">
+                <a href="" class="s-image"> <img src="images/index/kingsman.jpg" alt=""></a>
+                <a href="" class="s-title">Khong loi thoat hiem Khong loi thoat hiem</a>
+                <img class="s-label" src="images/index/13plus.png" alt="">
+            </div>
+            <div class="s-item col-2" data-country="" data-category="" data-year="">
+                <a href="" class="s-image"> <img src="images/index/kingsman.jpg" alt=""></a>
+                <a href="" class="s-title">Khong loi thoat hiem Khong loi thoat hiem</a>
+                <img class="s-label" src="images/index/13plus.png" alt="">
+            </div>
+            <!-- div. -->
+        </div>
+        <div class="warn-filter">
+            Không có dữ liệu
+        </div>
+        <!-- pagination -->
+        <div class="center">
+            <div class="pagination clear-fix">
+                <a href="#">&laquo;</a>
+                <a class="active" href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">&raquo;</a>
+            </div>
+        </div>
+    </div>
+    <!-- section end -->
+        
+    <!-- footer start -->
+    <div class="footer">
+
+        <div class="footer-logo">
+            <div><img class="logo-web" src="images/logo-design.png" alt="logo website"></div>
+            <div><a href="javascript:void(0);"><img class="logo-moit" src="images/logoSaleNoti.png" alt="Da thong bao voi bo cong thuong"></a></div>
+        </div>
+
+        <div class="footer-about">
+            <div class="footer-about-header f-head">
+                <p>Về chúng tôi</p>
+            </div>
+            <div class="f-div">
+                <p>Film Play là dịch vụ được cung cấp bởi Công ty Cổ phần Film Play, thành viên của Công ty Cổ phần Film1</p>
+            </div>
+            <div>
+                <p >Địa chỉ: -01 Xa Lộ Hà Nội, Phường Thảo Điền, Quận 2, Thành Phố Hồ Chí Minh, Việt Nam.</p>
+                <p class="f-p">Mã số doanh nghiệp: -00000000000.</p>
+                <p class="f-p">Ngày cấp mã số doanh nghiệp: 13/12/2000.</p>
+                <p class="f-p">Nơi cấp: Sở kế hoạch và đầu tư thành phố Thành Phố Hồ Chí Minh.</p>
+        </div>
+        </div>
+
+        <div class="footer-intro">
+            <div class="f-head">Giới thiệu</div>
+            <div class="f-p-h"><a href="javascript:void(0)">Chính sách</a></div>
+            <div class="f-p"><a href="javascript:void(0)">Điều khoản</a></div>
+            <div class="f-p"><a href="javascript:void(0)">Dịch vụ</a></div>
+        </div>
+
+        <div class="footer-support">
+            <div class="f-head">Hỗ trợ</div>
+            <div class="f-p-h">0385508780</div>
+            <div class="f-p">18520529@gm.uit.edu.vn</div>
+            <div class="f-p"><a href="javascript:void(0)">https://localhost/help</a></div>
+        </div>
+
+        <div class="footer-connect">
+            <div class="f-head">
+                Tải ứng dụng
+            </div>
+            <div class="f-download">
+                <div><a href="javascript:void(0);"><img class="logo-android" src="images/android-app-download-button.png" alt="Android app download"></a></div>
+                <div><a href="javascript:void(0);"><img class="logo-ios" src="images/ios-app-download-button.png" alt="IOS app download"></a></div>
+            </div>
+            <div class="f-head">
+                Kết nối với chúng tôi
+            </div>
+            <div class="f-app">
+                <a href="https://www.facebook.com/xphamvietchien/"><img class="logo-fb" src="images/icon-fb-12.jpg" alt="Connect Facebook"></a>
+                <a href="https://www.instagram.com/p_chien_/"><img class="logo-ins" src="images/ins-icon.png" alt="Connect Instagram"></a>
+                <a href="https://twitter.com/ChienPv13"><img class="logo-tw" src="images/Twitter social icons - square - blue.png" alt="Connect Twitter"></a>
+            </div>
+        </div>
+    </div>
+        <!-- footer end -->
+    <script src="library/less/less.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/phimle.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/filter.js"></script>
+</body>
+</html>

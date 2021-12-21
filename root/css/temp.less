@@ -1,0 +1,362 @@
+// CSS Document
+
+// define @font-face
+@font-face {
+    font-family: openSansRegular;
+    src: url(../library/OpenSans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: openSansSemiBold;
+    src: url(../library/OpenSans/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: openSansBold;
+    src: url(../library/OpenSans/OpenSans-Bold.ttf);
+}
+
+
+// define color
+
+@Cred: #CD212A;
+@Cblue: #0072B5;
+@Cbg: #131313;
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: openSansRegular, Arial, Helvetica, sans-serif;
+}
+
+// body{
+    
+// }
+
+// .container{
+//     margin: 0 60px;
+// }
+
+
+
+// start Header
+div.header{
+    z-index: 11;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-image: linear-gradient(rgb(0, 0, 0) 0%, rgba(0,0,0,0)) !important;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    justify-content: space-between;
+
+    .menu-header{
+        font-size: 40px;
+        display: none;
+        
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    .logo {
+
+        img{
+            height: 50px; 
+            width: auto;
+        }
+    }
+
+    .nav{
+        flex: 1;
+
+        a{
+            color: #FFFFFF99;
+            text-decoration: none; 
+            display: inline-block;
+            padding: 25px 15px 25px;
+
+            &:hover{
+                color: white;
+                font-weight: 600px;
+            }
+        }
+    }
+
+    .search{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+
+
+        .search-input{
+            background-color: #ffffff;
+            border-radius: 100px;
+            padding: 0 5px;
+            display: flex;
+            align-items: center;       
+            
+            
+            #search{
+                outline: none;
+                border: none;
+                font-size: 16px;
+                width: 118px;
+                background-color: #ffffff;
+            }
+
+            .search-submit{
+                background: none;
+                border: none;
+            }
+        }
+
+        
+
+        .fa-search{
+            color: rgb(0, 0, 0);
+            font-size: 1.3rem;
+            transform: translateY(15%);
+            margin-right: 10px;
+            display: none;
+        }
+
+        .btn-login{
+            // padding: 8px 25px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-left: 20px;
+            border: none;
+            font-family: openSansRegular, Arial, Helvetica, sans-serif;
+            background-color: @Cblue;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+
+            &:hover{
+                background-color: #048ddd;
+            }
+        }
+    }
+    
+}
+
+.header-rwd{
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    position: fixed;
+    z-index: 11;
+    top:0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    display: none;
+
+    div{
+        padding: 10px;
+        border-bottom: 1.7px dashed rgb(104, 104, 104);
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
+        &:hover{
+            color: white;
+            font-weight: 600px;
+        }
+    }
+
+    .close-header-rwd{
+        color: white;
+        text-align: right;
+        font-size: larger;
+        font-weight: 900;
+        cursor: pointer;
+
+        &:hover{
+            opacity: 0.8;
+        }
+
+        span{
+            padding: 10px 30px;
+        }
+    }
+
+    .search-rwd{
+        
+        #search-2{
+            padding: 5px;
+            border-radius: 100px;
+            outline: none;
+            border: none;
+        }
+
+        .search-submit-2{
+            background-color: inherit;
+            color: white;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+    }
+}
+// end header
+
+//start section
+.section{
+    background-color: @Cbg;
+}
+//end section
+
+// start footer
+.footer{
+    background-color: #0a0a0a;
+    padding: 0 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .footer-logo{
+        display: flex;
+        flex-direction: column;
+        flex:120px;
+
+        .logo-web{
+            width: auto;
+            height: 80px;
+            margin-top: 50px;
+        }
+
+        .logo-moit{
+            width: 140px;
+            height: auto;
+            margin-top: 20px;
+
+        }
+    }
+
+    .footer-about{
+        color: #FFFFFF99;
+        font-size: 16px;
+        flex: 530px;
+        padding-left:10px ;
+    }
+
+    .footer-intro{
+        flex: 120px;
+        padding-left: 22px;
+
+        a:hover{
+            color: white;
+        }
+    }
+
+    .footer-support{
+        
+        color: #FFFFFF99;
+        flex: 210px;
+
+        a:hover{
+            color: white;
+        }
+    }
+
+    .footer-connect{
+        flex: 340px;
+
+        .logo-android, .logo-ios{
+            width: 150px;
+            height: auto;
+        }
+
+        .logo-fb, .logo-ins, .logo-tw{
+            width: 40px;
+            height: auto;
+            border-radius: 7px;
+            margin-right: 15px;
+        }
+
+        .f-download{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        a:hover{
+            opacity: 0.85;;
+        }
+    }
+}
+
+.f-head{
+        color: white;
+        font-weight: bold;
+        margin: 20px 0;
+}
+
+a{
+    color: #FFFFFF99;
+    text-decoration: none;
+}
+
+.f-div{
+    padding: 5px 0;
+}
+
+.f-p{
+    padding: 3px 0;
+}
+
+.f-p-h{
+    padding: 0 0 3px 0;
+}
+// end footer
+
+// class danh cho js
+.active-nav{
+    color: white !important;
+    font-weight: 600;
+}
+
+.unhide-flex{
+   display: flex; 
+}
+
+// responsive
+@media screen and (max-width:1030px) {
+    .nav{
+        display: none !important;
+    }
+
+    .logo{
+        flex: 1 !important;
+        text-align: center !important;
+    }
+
+    .header{
+        padding: 0 20px !important;
+    }
+    
+    .menu-header{
+        display: flex !important;
+    }
+    .btn-login{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .search-input{
+        display: none !important;
+    }
+}
+

@@ -1,0 +1,153 @@
+// CSS document
+img{
+    display: block;
+    max-width: 100%;
+}
+
+// Format slider
+
+
+// format cat
+.s-content{
+    margin: 0 60px;
+   
+}
+
+.cat{
+    color: white;
+    position: relative;
+    width: 100%;
+    margin: 60px 0 0 0;
+    
+    .cat-title{
+        font-size: 22px;
+        font-weight: bolder;
+        margin: 15px 0;
+        margin-top: 0;
+        
+        
+        a{
+            color: white;
+            transition: 0.3s;
+            &:hover{
+                color: #0084c7;
+            }
+        }
+    }
+
+    .cat-container{
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+
+        .cat-prev, .cat-next{
+            position: absolute;
+            top: 50%;
+            color: white;
+            font-size: xx-large;
+            transform: translateY(-100%);
+            z-index: 10;
+            padding: 10px 5px;
+            background-color: rgba(94, 94, 94, 0.342);
+            border-radius: 3px;
+            transition: color;
+            transition-duration: 0.5s;
+            &:hover{
+                cursor: pointer;
+                color: yellow;
+            }
+        }
+
+        .cat-prev{
+            left: 0;
+            display: none;
+        }
+
+        .cat-next{
+            right: 0;
+        }
+
+        .cat-container-flex{
+            display: flex;
+            position: relative;
+            width: 100%;
+            transition: transform;
+            transition-duration: 0.5s;
+
+            .cat-movie{
+                flex-grow: 1;
+                flex-shrink: 0;
+                width: 15.36592338%;
+                margin-right: 1.61589008% ;
+                position: relative;
+                
+                img{
+                    transition: 0.3s;
+                    opacity: 0.9;
+                    border-radius: 5px;
+                    margin-bottom: 15px;
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+
+                .cat-label{
+                    position: absolute;
+                    top: 4%;
+                    left: 4%;
+
+                    img{
+                        height: 20px;
+                        width: auto;
+                    }
+                }
+            }
+
+            .cat-image-title{
+                max-width: 100%;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                height: 42px;
+                line-height: 1.3em;
+                margin-bottom: 10px;
+
+                a{
+                    color: white;
+                    transition: 0.2s;
+
+                    &:hover{
+                        color: #0084c7;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.f-app > a{
+    display: inline-block;
+}
+
+// rwd
+@media screen and (max-width: 1000px){
+
+    .cat-movie {
+        width: 30% !important;
+        margin-right: 4.99999999998% !important;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .img-title{
+        width: 60% !important;
+    }
+}
+
+.test{
+    color: white;
+}
