@@ -1,2 +1,9 @@
-# Project-Web
-Đây là repo chứa front-end của website
+# Summary
+
+## Static website
+
+## Technical
+- HTML
+- CSS
+- EmmaScript 6
+- JQuery
